@@ -1,0 +1,48 @@
+set shell fish
+set ignorecase true
+set icons false
+
+cmd mkdir ${{
+ printf "Directory Name: "
+ read ans
+ mkdir $ans
+}}
+
+cmd mkfile ${{
+ printf "File Name: "
+ read ans
+ touch $ans
+}}
+
+cmd newfile ${{
+ printf "File Name (EDITOR): "
+ read ans
+ $EDITOR $ans
+}}
+
+cmd trash %{{
+    mv $fx ~/.Trash
+}}
+
+cmd opennvim ${{
+ nvim $f
+}}
+
+cmd opennvimnewsession ${{
+ tmux new-window nvim $fx
+}}
+
+map o opennvim
+map <space>
+map <space>o opennvimnewsession
+map <space>DD delete
+map <space>d trash
+map <space>nf :push %touch<space>
+map <space>nd :push %mkdir<space>
+map <space>qf opennvim
+map <enter> shell
+map x toggle
+map gd cd ~/Downloads
+map gw cd ~/Workspaces
+map gh cd ~
+
