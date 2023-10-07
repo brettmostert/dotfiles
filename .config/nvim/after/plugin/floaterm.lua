@@ -1,3 +1,0 @@
---vim.keymap.set("n", "<leader>lf", "<Cmd>FloatermNew lf<CR>")
---vim.keymap.set("n", "<leader>`", "<Cmd>FloatermNew<CR>")
---vim.g.floaterm_opener = 'edit'
