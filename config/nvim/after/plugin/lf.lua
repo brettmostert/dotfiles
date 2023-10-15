@@ -5,7 +5,7 @@ require("lf").setup({
    border = "rounded",
    --border = "double",
    tmux = false,
-   default_file_manager = false
+   default_file_manager = true
 })
 
 vim.keymap.set("n", "<leader>lf", "<Cmd>Lf<CR>")
