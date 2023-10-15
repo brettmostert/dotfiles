@@ -5,3 +5,4 @@ starship init fish | source
 # set -gx NVM_DIR /path/to/nvm
 set -gx EDITOR nvim
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
+fish_add_path /Users/brettmostert/Library/pnpm
