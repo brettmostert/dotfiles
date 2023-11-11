@@ -4,7 +4,8 @@ alias v="nvim"
 
 alias gd="cd ~/Downloads"
 alias gw="cd ~/Workspaces"
-
+alias gwp="cd ~/workspaces-pvt"
+alias gwpvt="gwp"
 alias weather="curl https://wttr.in"
 
 alias k="kubectl"
@@ -15,3 +16,5 @@ alias kl="kubectl logs"
 alias kc="kubectl config current-context"
 alias kconfig="kubectl config"
 # alias dev="develop"
+
+alias pn="pnpm"
