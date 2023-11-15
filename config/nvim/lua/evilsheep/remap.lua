@@ -59,7 +59,7 @@ vim.keymap.set("n","<leader>b.",":bnext<CR>")
 vim.keymap.set("n","<leader>b,",":bprev<CR>")
 vim.keymap.set("n", "<leader>.", ":tabn<CR>")
 vim.keymap.set("n", "<leader>,", ":tabp<CR>")
-
+vim.keymap.set("n","<leader>nt",":tabnew<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
