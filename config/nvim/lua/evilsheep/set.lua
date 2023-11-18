@@ -1,12 +1,5 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
--- let g:netrw_altv=1
---vim.g.netrw_altv=1
---vim.g.netrw_liststyle = 3
---vim.g.netrw_banner = 0
---vim.g.netrw_browse_split = 2
---vim.g.netrw_winsize = 20
---vim.g.netrw_chgwin=1
 
 vim.opt.termguicolors = true
 vim.opt.showmode = false
