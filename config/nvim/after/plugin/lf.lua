@@ -1,11 +1,9 @@
---vim.g.lf_netrw = 1
-
+vim.g.lf_netrw = false
 require("lf").setup({
    escape_quit = false,
    border = "rounded",
-   --border = "double",
    tmux = false,
-   default_file_manager = true
+   default_file_manager = false
 })
 
 vim.keymap.set("n", "<leader>lf", "<Cmd>Lf<CR>")
