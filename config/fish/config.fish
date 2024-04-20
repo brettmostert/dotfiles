@@ -6,7 +6,7 @@ starship init fish | source
 set -gx EDITOR nvim
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 fish_add_path /Users/brettmostert/Library/pnpm
-
+fish_add_path /Users/brettmostert/go/bin
 # pnpm
 set -gx PNPM_HOME "/Users/brettmostert/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
