@@ -24,6 +24,9 @@ vim.keymap.set("n", "<leader>.", ":tabn<CR>")
 vim.keymap.set("n", "<leader>,", ":tabp<CR>")
 vim.keymap.set("n", "<leader>nt", ":tabnew<CR>")
 
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>p",'"+p')
+
 vim.keymap.set("n", "<leader><leader>", function()
    vim.cmd("so")
 end)

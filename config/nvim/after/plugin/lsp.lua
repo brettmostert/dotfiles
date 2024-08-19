@@ -39,7 +39,7 @@ end
 require('mason').setup({})
 require('mason-lspconfig').setup({
    ensure_installed = {
-      lua_ls, tsserver, jsonls, gopls
+      lua_ls, tsserver, jsonls, gopls, yaml_language_server
    },
    handlers = { default_setup },
 })
@@ -65,6 +65,31 @@ cmp.setup({
       end,
    },
 })
+lspconfig.helm_ls.setup {
+  settings = {
+    ['helm-ls'] = {
+      yamlls = {
+        path = "yaml-language-server",
+      }
+    }
+  }
+}
+lspconfig.yamlls.setup {}
+--lspconfig.yamlls.setup({
+  --      settings = {
+    --        yaml = {
+     --           schemas = { kubernetes = "globPattern" },
+      --      }
+      --  }
+    --})
+
+-- local yamlls = require('yaml-language-server')
+--yamlls.setup({
+--    settings = {
+ --       yaml = {
+  --         schemas = { kubernetes = "globPattern" },
+   --   }
+--}})
 
 vim.api.nvim_create_autocmd('LspAttach', {
    group = vim.api.nvim_create_augroup('UserLspConfig', {}),
