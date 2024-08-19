@@ -19,8 +19,4 @@ style = "Regular"
 
 [shell]
 args = ["-l", "-c", "tmux attach || tmux"]
-<<<<<<< HEAD
 program = "/opt/homebrew/bin/fish"
-=======
-program = "/opt/homebrew/bin/fish"
->>>>>>> f8792df (updated fish config and nvimtree keys)
