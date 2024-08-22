@@ -12,6 +12,7 @@
     ~/.config/nvim: config/nvim
     ~/.config/omf: config/omf
     ~/.config/starship.toml: config/starship.toml
+    ~/.config/aerospace: config/aerospace
     ~/.tmux.conf: tmux.conf
     ~/.nvimrc: nvimrc
     
