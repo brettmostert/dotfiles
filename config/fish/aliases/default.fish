@@ -18,3 +18,4 @@ alias kconfig="k config"
 # alias dev="develop"
 
 alias pn="pnpm"
+alias love="/Applications/love.app/Contents/MacOS/love"
