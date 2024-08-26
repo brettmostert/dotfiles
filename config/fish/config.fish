@@ -9,7 +9,7 @@ fish_add_path /Users/brettmostert/Library/pnpm
 fish_add_path /Users/brettmostert/go/bin
 fish_add_path /Users/brettmostert/.rd/bin
 # load common files
-source /Users/brettmostert/.commonsh
+# source /Users/brettmostert/.commonsh
 
 # pnpm
 set -gx PNPM_HOME "/Users/brettmostert/Library/pnpm"

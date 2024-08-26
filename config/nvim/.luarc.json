@@ -1,0 +1,9 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "lua_ls",
+        "tsserver",
+        "jsonls",
+        "gopls"
+    ]
+}

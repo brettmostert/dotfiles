@@ -39,7 +39,7 @@ end
 require('mason').setup({})
 require('mason-lspconfig').setup({
    ensure_installed = {
-      lua_ls, tsserver, jsonls, gopls, yaml_language_server
+      lua_ls, tsserver, jsonls, gopls
    },
    handlers = { default_setup },
 })
@@ -66,30 +66,36 @@ cmp.setup({
    },
 })
 lspconfig.helm_ls.setup {
-  settings = {
-    ['helm-ls'] = {
-      yamlls = {
-        path = "yaml-language-server",
+   settings = {
+      ['helm-ls'] = {
+         yamlls = {
+            path = "yaml-language-server",
+         }
       }
-    }
-  }
+   }
 }
+
 lspconfig.yamlls.setup {}
 --lspconfig.yamlls.setup({
-  --      settings = {
-    --        yaml = {
-     --           schemas = { kubernetes = "globPattern" },
-      --      }
-      --  }
-    --})
+--      settings = {
+--        yaml = {
+--           schemas = { kubernetes = "globPattern" },
+--      }
+--  }
+--})
 
 -- local yamlls = require('yaml-language-server')
 --yamlls.setup({
 --    settings = {
- --       yaml = {
-  --         schemas = { kubernetes = "globPattern" },
-   --   }
+--       yaml = {
+--         schemas = { kubernetes = "globPattern" },
+--   }
 --}})
+--
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist)
 
 vim.api.nvim_create_autocmd('LspAttach', {
    group = vim.api.nvim_create_augroup('UserLspConfig', {}),
@@ -112,14 +118,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
       end, opts)
       vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)
       vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
-      --vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
       vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-      vim.keymap.set('n', '<C-f>', function()
+      vim.keymap.set('n', '<f>', function()
          vim.lsp.buf.format { async = true }
       end, opts)
       vim.keymap.set('i', '<C-f>', function()
          vim.lsp.buf.format { async = true }
       end, opts)
-
    end,
 })
