@@ -30,3 +30,5 @@ vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("n", "<leader><leader>", function()
    vim.cmd("so")
 end)
+
+vim.keymap.set("n", "<leader>tmd",":RenderMarkdown toggle<CR>")
