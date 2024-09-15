@@ -76,6 +76,13 @@ lspconfig.helm_ls.setup {
 }
 
 lspconfig.yamlls.setup {}
+
+cmp.setup.filetype({ "sql" }, {
+  sources = {
+    { name = "vim-dadbod-completion" },
+    { name = "buffer" },
+  },
+})
 --lspconfig.yamlls.setup({
 --      settings = {
 --        yaml = {
