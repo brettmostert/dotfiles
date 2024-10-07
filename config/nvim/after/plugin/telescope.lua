@@ -22,8 +22,7 @@ require("telescope").setup {
     -- Your extension config goes in here
   }
 }
-
-
+require("telescope").load_extension("undo")
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 vim.keymap.set('n', '<leader>pgit', builtin.git_files, {})
