@@ -19,3 +19,5 @@ alias kconfig="k config"
 
 alias pn="pnpm"
 alias love="/Applications/love.app/Contents/MacOS/love"
+
+alias cl="clear"
