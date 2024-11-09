@@ -41,7 +41,6 @@ key-mapping.preset = 'qwerty'
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
-exec-on-workspace-change = ['/bin/bash','/Users/brettmostert/scripts/move-keymap.sh']
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
@@ -137,6 +136,46 @@ alt-m = 'workspace M'
 # alt-q = 'workspace Q'
 # alt-r = 'workspace R'
 alt-s = 'workspace S'
+# [[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'company.thebrowser.Browser'
+run = 'move-node-to-workspace 2'
+
 alt-t = 'workspace T'
 # alt-u = 'workspace U'
 # alt-v = 'workspace V'
@@ -216,6 +255,7 @@ run = 'move-node-to-workspace 2'
 if.app-id = 'org.mozilla.com.zen.browser'
 run = 'move-node-to-workspace 2'
 
+
 [[on-window-detected]]
 if.app-id = 'org.alacritty'
 run = 'move-node-to-workspace 1'
@@ -227,4 +267,3 @@ run = 'move-node-to-workspace M'
 [[on-window-detected]]
 if.app-id = 'io.zsa.keymapp'
 run = 'layout floating'
-

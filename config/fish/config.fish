@@ -8,6 +8,7 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 fish_add_path /Users/brettmostert/Library/pnpm
 fish_add_path /Users/brettmostert/go/bin
 fish_add_path /Users/brettmostert/.rd/bin
+fish_add_path /Users/brettmostert/scripts
 # load common files
 # source /Users/brettmostert/.commonsh
 
