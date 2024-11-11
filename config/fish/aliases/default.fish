@@ -21,3 +21,4 @@ alias pn="pnpm"
 alias love="/Applications/love.app/Contents/MacOS/love"
 
 alias cl="clear"
+alias g="git"
