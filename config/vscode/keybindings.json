@@ -1,22 +1,36 @@
 // Place your key bindings in this file to override the defaults
 [
     {
+        "key": "ctrl+shift+alt+cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+v",
+        "command": "workbench.action.toggleAuxiliaryBar",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+v",
+        "command": "-workbench.action.toggleAuxiliaryBar",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+n",
+        "command": "workbench.action.toggleAuxiliaryBar",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+n",
+        "command": "-workbench.action.toggleAuxiliaryBar",
+    },
+    {
         "key": "ctrl+shift+alt+cmd+e",
         "command": "workbench.view.explorer"
     },
     {
         "key": "ctrl+shift+alt+cmd+e",
         "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "ctrl+shift+alt+cmd+e",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "explorerViewletVisible"
-    },
-    {
-        "key": "ctrl+shift+alt+cmd+e",
-        "command": "-workbench.action.toggleSidebarVisibility",
-        "when": "explorerViewletVisible"
     },
     {
         "key": "ctrl+shift+alt+cmd+z",
@@ -44,18 +58,11 @@
     },
     {
         "key": "ctrl+shift+alt+cmd+c",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "auxiliaryBarFocus"
+        "command": "workbench.action.chat.open"
     },
     {
         "key": "ctrl+shift+alt+cmd+c",
-        "command": "workbench.action.focusAuxiliaryBar",
-        "when": "!auxiliaryBarVisible ||  !auxiliaryBarFocus"
-    },
-    {
-        "key": "ctrl+shift+alt+cmd+c",
-        "command": "workbench.action.toggleAuxiliaryBar",
-        "when": "auxiliaryBarVisible && auxiliaryBarFocus"
+        "command": "-workbench.action.chat.open"
     },
     {
         "key": "ctrl+shift+alt+cmd+p",
@@ -65,5 +72,13 @@
         "key": "ctrl+shift+alt+cmd+p",
         "command": "workbench.action.unpinEditor",
         "when": "activeEditorIsPinned"
-    }
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+g",
+        "command": "workbench.view.scm",
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+g",
+        "command": "-workbench.view.scm"
+    },
 ]

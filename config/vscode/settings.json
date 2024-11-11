@@ -60,6 +60,27 @@
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
+    // git navigation
+    {
+      "before": [
+        "leader",
+        "g",
+        "k"
+      ],
+      "commands": [
+        "git.previousChange"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "g",
+        "j"
+      ],
+      "commands": [
+        "git.nextChange"
+      ]
+    },
     // switch b/w buffers
     {
       "before": [
