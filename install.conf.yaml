@@ -5,7 +5,7 @@
 
 - clean: ['~']
 
-- link: 
+- link:
     ~/.config/alacritty: config/alacritty
     ~/.config/fish: config/fish
     ~/.config/lf: config/lf
@@ -13,9 +13,10 @@
     ~/.config/omf: config/omf
     ~/.config/starship.toml: config/starship.toml
     ~/.config/aerospace: config/aerospace
+    ~/.config/karabiner: config/karabiner
     ~/scripts: scripts
     ~/.tmux.conf: tmux.conf
     ~/.nvimrc: nvimrc
-    
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
