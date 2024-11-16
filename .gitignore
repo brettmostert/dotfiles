@@ -4,3 +4,4 @@ config/fish/completions/docker.fish
 config/fish/completions/kubectl.fish
 config/.DS_Store
 .DS_Store
+automatic_backups
