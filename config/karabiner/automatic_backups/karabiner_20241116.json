@@ -10,17 +10,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "j" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "j"
+                                        "set_variable": {
+                                            "name": "hyper_j_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "j" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "right_control"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_j_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "right_control" }
                                 ],
                                 "type": "basic"
                             }
@@ -32,17 +38,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "f" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "f"
+                                        "set_variable": {
+                                            "name": "hyper_f_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "f" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "left_control"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_f_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "left_control" }
                                 ],
                                 "type": "basic"
                             }
@@ -54,17 +66,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "k" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "k"
+                                        "set_variable": {
+                                            "name": "hyper_k_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "k" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "right_option"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_k_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "right_option" }
                                 ],
                                 "type": "basic"
                             }
@@ -76,17 +94,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "d" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "d"
+                                        "set_variable": {
+                                            "name": "hyper_d_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "d" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "left_option"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_d_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "left_option" }
                                 ],
                                 "type": "basic"
                             }
@@ -98,17 +122,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "l" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "l"
+                                        "set_variable": {
+                                            "name": "hyper_l_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "l" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "right_command"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_l_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "right_command" }
                                 ],
                                 "type": "basic"
                             }
@@ -120,17 +150,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "s" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "s"
+                                        "set_variable": {
+                                            "name": "hyper_s_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "s" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "left_command"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_s_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "left_command" }
                                 ],
                                 "type": "basic"
                             }
@@ -142,17 +178,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "semicolon" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "semicolon"
+                                        "set_variable": {
+                                            "name": "hyper_semicolon_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "semicolon" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "right_shift"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_semicolon_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "right_shift" }
                                 ],
                                 "type": "basic"
                             }
@@ -164,17 +206,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "a" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "a"
+                                        "set_variable": {
+                                            "name": "hyper_a_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "a" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
-                                        "key_code": "left_shift"
-                                    }
+                                        "set_variable": {
+                                            "name": "hyper_a_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    { "key_code": "left_shift" }
                                 ],
                                 "type": "basic"
                             }
@@ -186,15 +234,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "g" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "g"
+                                        "set_variable": {
+                                            "name": "hyper_g_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "g" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
+                                        "set_variable": {
+                                            "name": "hyper_g_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
                                         "key_code": "left_command",
                                         "modifiers": ["left_control", "left_shift", "left_option"]
                                     }
@@ -210,15 +266,23 @@
                         "manipulators": [
                             {
                                 "from": { "key_code": "h" },
-                                "to_if_alone": [
+                                "to_after_key_up": [
                                     {
-                                        "halt": true,
-                                        "key_code": "h"
+                                        "set_variable": {
+                                            "name": "hyper_h_held_down",
+                                            "value": 0
+                                        }
                                     }
                                 ],
+                                "to_if_alone": [{ "key_code": "h" }],
                                 "to_if_held_down": [
                                     {
-                                        "halt": true,
+                                        "set_variable": {
+                                            "name": "hyper_h_held_down",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
                                         "key_code": "right_command",
                                         "modifiers": ["right_control", "right_shift", "right_option"]
                                     }
@@ -231,14 +295,6 @@
                 ]
             },
             "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 835,
-                        "vendor_id": 1452
-                    },
-                    "manipulate_caps_lock_led": false
-                },
                 {
                     "identifiers": {
                         "is_keyboard": true,

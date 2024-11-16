@@ -1,11 +1,11 @@
 CURRENT_CONTEXT=$(kubectl config current-context)
 case $CURRENT_CONTEXT in
-    "docker-desktop")
+    "orbstack")
         ENV="local"
         ;;
-#    "main-cluster-stag-aks")
-#        ENV="staging"
-#        ;;
+   "default")
+       ENV="lab"
+       ;;
 #    "main-cluster-prod-aks")
 #        ENV="prod"
 #        ;;
@@ -14,13 +14,13 @@ case $CURRENT_CONTEXT in
         ;;
 esac
 
-case $ENV in 
+case $ENV in
     "local")
         echo "#[fg=colour10] LOCAL 🌱 "
         ;;
-#    "staging")
-#        echo "#[fg=color226] STGNG 🚜 "
-#        ;;
+   "lab")
+       echo "#[fg=color226] LAB 🚜 "
+       ;;
 #    "prod")
 #        echo "#[fg=color0,bg=colour160] PROD ⚠️  "
 #        ;;
