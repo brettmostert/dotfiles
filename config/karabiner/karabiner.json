@@ -2,14 +2,20 @@
     "profiles": [
         {
             "complex_modifications": {
-                "parameters": { "basic.to_if_held_down_threshold_milliseconds": 150 },
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 110,
+                    "basic.to_if_held_down_threshold_milliseconds": 150
+                },
                 "rules": [
                     {
                         "description": "Home Row: j (held down) - right ctrl",
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "j" },
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -31,7 +37,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "f" },
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -53,7 +62,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "k" },
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -75,7 +87,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "d" },
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -97,7 +112,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "l" },
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -119,7 +137,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "s" },
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -141,7 +162,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "semicolon" },
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
@@ -163,7 +187,10 @@
                         "maintainers": ["brettmostert"],
                         "manipulators": [
                             {
-                                "from": { "key_code": "a" },
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": { "optional": ["any"] }
+                                },
                                 "to_if_alone": [
                                     {
                                         "halt": true,
