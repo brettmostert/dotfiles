@@ -20,3 +20,8 @@ style = "Regular"
 [terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
 program = "/opt/homebrew/bin/fish"
+# program = "/bin/zsh"
+
+[colors.primary]
+background = "#24283b"
+foreground = "#9aa5ce"

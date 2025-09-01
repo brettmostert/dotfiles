@@ -19,6 +19,7 @@
     ~/scripts: scripts
     ~/.tmux.conf: tmux.conf
     ~/.nvimrc: nvimrc
+    ~/.zshrc: zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

@@ -129,7 +129,7 @@ alt-c = 'workspace C'
 # alt-e = 'workspace E'
 alt-f = 'workspace F'
 # alt-g = 'workspace G'
-# alt-i = 'workspace I'
+alt-i = 'workspace I'
 alt-m = 'workspace M'
 # alt-n = 'workspace N'
 # alt-o = 'workspace O'
@@ -164,7 +164,7 @@ alt-shift-c = 'move-node-to-workspace C'
 # alt-shift-e = 'move-node-to-workspace E'
 alt-shift-f = 'move-node-to-workspace F'
 # alt-shift-g = 'move-node-to-workspace G'
-# alt-shift-i = 'move-node-to-workspace I'
+alt-shift-i = 'move-node-to-workspace I'
 alt-shift-m = 'move-node-to-workspace M'
 # alt-shift-n = 'move-node-to-workspace N'
 # alt-shift-o = 'move-node-to-workspace O'
@@ -205,31 +205,35 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = 'move-node-to-workspace S' # mnemonics S - Slack
+   if.app-id = 'com.tinyspeck.slackmacgap'
+   run = 'move-node-to-workspace S' # mnemonics S - Slack
 
 [[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
-run = 'move-node-to-workspace 2'
+   if.app-id = 'company.thebrowser.Browser'
+   run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-if.window-title-regex-substring = 'Picture-in-Picture'
-run = 'layout floating'
-check-further-callbacks = true
+   if.app-id = 'app.zen-browser.zen'
+   if.window-title-regex-substring = 'Picture-in-Picture'
+   run = 'layout floating'
+   check-further-callbacks = true
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace 2'
+   if.app-id = 'app.zen-browser.zen'
+   run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty'
-run = 'move-node-to-workspace 1'
+   if.app-id = 'org.alacritty'
+   run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace M'
+   if.app-id = 'com.spotify.client'
+   run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
-if.app-id = 'io.zsa.keymapp'
-run = 'layout floating'
+   if.app-id = 'io.zsa.keymapp'
+   run = 'layout floating'
+
+[[on-window-detected]]
+   if.app-id = 'com.jetbrains.intellij'
+   run = 'move-node-to-workspace I' # mnemonics I - IDE
