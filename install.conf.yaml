@@ -16,6 +16,8 @@
     ~/.config/karabiner: config/karabiner
     ~/.config/zed/settings.json: config/zed/settings.json
     ~/.config/zed/keymap.json: config/zed/keymap.json
+    ~/.config/kitty: config/kitty
+    ~/.config/zsh: config/zsh
     ~/scripts: scripts
     ~/.tmux.conf: tmux.conf
     ~/.nvimrc: nvimrc

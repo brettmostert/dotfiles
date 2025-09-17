@@ -13,14 +13,18 @@ fish_add_path /Users/brettmostert/scripts
 # source /Users/brettmostert/.commonsh
 
 # pnpm
-set -gx PNPM_HOME "/Users/brettmostert/Library/pnpm"
+set -gx PNPM_HOME /Users/brettmostert/Library/pnpm
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
 
 # Added by Windsurf
 fish_add_path /Users/brettmostert/.codeium/windsurf/bin
+
+#export SDKMAN_DIR="$HOME/.sdkman"
+fish_add_path $HOME/.sdkman
+#[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.

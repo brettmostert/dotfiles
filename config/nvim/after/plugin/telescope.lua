@@ -1,3 +1,8 @@
+local action_state = require('telescope.actions.state')
+local actions = require('telescope.actions')
+
+
+
 require("telescope").setup {
   pickers = {
     -- Your special builtin config goes in here
@@ -8,10 +13,10 @@ require("telescope").setup {
       mappings = {
         i = {
           ["<c-d>"] = require("telescope.actions").delete_buffer,
-        },
+       },
         n = {
           ["<c-d>"] = require("telescope.actions").delete_buffer,
-        }
+       }
       }
     },
     -- find_files = {
