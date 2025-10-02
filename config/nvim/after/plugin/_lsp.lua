@@ -21,7 +21,7 @@ lsp.set_preferences({
 --   vim.keymap.set("i", "<C-k>", function() vim.lsp.buf.signature_help() end, opts)
 --end)
 
-require('java').setup()
+-- require('java').setup()
 local lspconfig = require('lspconfig')
 local lsp_defaults = lspconfig.util.default_config
 lsp_defaults.capabilities = vim.tbl_deep_extend(
@@ -76,7 +76,7 @@ lspconfig.helm_ls.setup {
 }
 
 lspconfig.yamlls.setup {}
-lspconfig.jdtls.setup({})
+-- lspconfig.jdtls.setup({})
 cmp.setup.filetype({ "sql" }, {
   sources = {
     { name = "vim-dadbod-completion" },
