@@ -19,8 +19,8 @@ style = "Regular"
 
 [terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
-program = "/opt/homebrew/bin/fish"
-# program = "/bin/zsh"
+program = "/bin/zsh"
+# program = "/opt/homebrew/bin/fish"
 #
 # [colors.primary]
 # background = "#24283b"
