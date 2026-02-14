@@ -28,8 +28,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 eval "$(starship init zsh)"
 
-source "$HOME/.config/zsh/aliases.sh"
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then . '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'; fi
 
@@ -44,3 +42,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Added by Antigravity
 export PATH="/Users/brettmostert/.antigravity/antigravity/bin:$PATH"
+
+source "$HOME/.config/zsh/aliases.sh"  
+export PATH="$HOME/.local/bin:$PATH"
